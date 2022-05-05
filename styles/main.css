@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: 0em;
+    font-family: 'Dela Gothic One', cursive;
+    background: silver;
+
+
+}
+
+body img {
+    width: 100%;
+}
+
+html {
+    background-image: url("../images/backround.jpeg");
+    background-attachment: fixed;
+}
+
+header {
+    border-bottom: 5px solid black;
+    background-image: url("../images/backround.jpeg");
+    margin-bottom: 0.1em;
+    padding-bottom: 2.7em;
+
+    
+}
+
+
+
+header h2 {
+    font-size: 350%;
+    text-shadow: 3px 3px white;
+
+}
+#logoimage {
+    float: left;
+    max-width: 120px;
+    width: 100%;
+    margin: .5em;
+
+}
+
+div {
+    padding: 0em;
+}
+
+.ocean {
+    height: 85vh;
+    background-image: url(../images/DJI_0298.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.ocean h3 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: ghostwhite;
+    padding: 40vh 0 0 0;
+    font-size: 300%;
+    text-shadow: 3px 3px black;
+    
+}
+
+
+
+
+
+
+main {
+    font-size: 130%;
+    text-align: center;
+    
+}
+main h3{
+    font-size: 200%;
+    text-shadow: 2px 2px white;
+}
+
+
+
+
+
+footer {
+    border-top: 3px solid silver;
+    background-color: grey;
+    padding: 1em 0;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+
+
+}
+
+footer p {
+    font-size: 100%;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 2em 0em;
+    margin-left: 30em;
+
+    
+}
+footer img{
+    max-width: 170px;
+    max-height: 100px;
+    width: 100%;
+    border-radius: 15px;
+    border: 3px outset silver;
+    align-items: right;
+    margin-left: 25em;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    html {
+        background-image: none;
+    }
+
+    body {
+        box-shadow: none;
+        font-size: 90%;
+        border: none;
+    }
+
+    #leftaside {
+        display: none;
+    }
+
+    section {
+        width: 70%;
+        padding-left: 1em;
+    }
+
+    body img {
+        width: 100%;
+    }
+
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+        #nav_menu {
+            display: none;
+        }
+
+        #mobilemenu {
+            display: block;
+        }
+
+        .slicknav_menu {
+            background-color: steelblue !important;
+        }
+
+        header h2 {
+            font-size: 200%;
+        }
+
+        h1 {
+            font-size: 200%;
+        }
+
+        section,
+        aside {
+            float: none;
+            width: 100%;
+            margin: 0 auto;
+            padding: .5em;
+        }
+
+        #logoimage {
+            float: none;
+            padding: .5em;
+            display: block;
+            margin: 0 auto;
+        }
+
+        header h2,
+        header h3 {
+            text-align: center;
+        }
+
+        body img {
+            width: 100%;
+        }
+    }
+}
